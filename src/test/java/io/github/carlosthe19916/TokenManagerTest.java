@@ -8,7 +8,7 @@ public class TokenManagerTest {
     @Test
     public void test() {
         TokenManager tokenManager = new TokenManager("a", "b");
-        Assert.assertEquals("a", tokenManager.getRefreshToken().get());
+        Assert.assertFalse(tokenManager.getRefreshToken().isPresent());
     }
 
 }
