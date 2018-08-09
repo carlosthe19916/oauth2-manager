@@ -12,6 +12,7 @@ public class TokenManager {
     public TokenManager(String clientID, String tokenURL) {
         this.clientID = clientID;
         this.tokenURL = tokenURL;
+        this.refreshToken = Optional.empty();
     }
 
     public Optional<String> getRefreshToken() {
